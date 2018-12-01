@@ -1,0 +1,73 @@
+.container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.intro h2{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+    color: #234;
+}
+
+.intro p{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #234;
+}
+
+.contactform-header{
+    color: #234;
+    margin-bottom: 17px;
+    line-height: 40px;
+    margin-top: 0;
+    font-size: 25px;
+    font-family: Ubuntu,Arial,Helvetica,sans-serif;
+    font-weight: 300;
+}
+
+.contactform-field{
+    width: 100%;
+}
+
+.contactform-field-textarea{
+    height: 270px;
+}
+
+.submit-contact-form{
+    width: auto !important;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background-color: #54b847;
+    padding: 10px 20px 10px 20px !important;
+    border-width: 0px !important;
+    border-color: #000000;
+    border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+}
+
+.contactform-field-textarea{
+    resize: none;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex.mat-form-field-flex{
+    border: 1px solid #e0E0E0;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before{
+    background-color: transparent;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-ripple{
+    height: 0px;
+}
+
+::ng-deep .mat-form-field-appearance-fill:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{
+    height: 0px;
+}

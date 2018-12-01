@@ -1,0 +1,139 @@
+.container{
+    height: 100%;
+}
+
+.row{
+    height: 100%;
+}
+
+header{
+    height: 109px;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid transparent;
+    z-index: 9995;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border-bottom: 1px solid lightgrey;
+    background-color: #fff;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+
+.header--small{
+    height: 79px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+    background-color: #fff;
+}
+
+.logo{
+    float: left;
+}
+
+.logo-link{
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    content: "";
+    background-image: url("../assets/Vecteezy-17-8500-10.jpg");
+    background-repeat: no-repeat;
+    background-size: 198px 25px;
+}
+
+.logo-link--small{
+    height: 50px;
+    width: 50px;
+}
+
+.navigation{
+    position: relative;
+    float: right;
+    margin-top: 16px;
+}
+
+.navigation-list-item{
+    display: inline-block;
+}
+
+.navigation-list-item+.navigation-list-item{ 
+    margin-left: 50px;
+}
+
+.navigation-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.navigation-list-item--dropdown--show{
+
+}
+
+
+.navigation-list-link{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    font-family: Avenir,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.navigation-list-link::after{
+    position: relative;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    font-family: Avenir,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+/* shows imidiate children */
+.navigation-list-item--dropdown--show>.navigation-dropdown {
+    max-height: 600px;
+}
+
+.navigation-dropdown{
+    position: absolute;
+    display: block;
+    width: 240px;
+    max-height: 0;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 3px 14px rgba(0,0,0,.1);
+    box-shadow: 3px 3px 14px rgba(0,0,0,.1);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+a{
+    cursor: pointer;
+}

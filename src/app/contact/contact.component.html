@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="intro text-center">
+        <h2>Want to start a project?</h2>
+        <p>It's simple</p>
+      </div>    
+      <form class="row justify-content-between" [formGroup]="contactForm" (ngSubmit)="onSubmit(contactform.value)">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="contactform-header">
+            <h4>contact details</h4>
+          </div>
+          <div class="contactform-body">
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Full name</mat-label>
+              <input matInput formControlName="fullName" required>
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Company</mat-label>
+              <input matInput formControlName="company">
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Phone</mat-label>
+              <input matInput formControlName="phone">
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" required>
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Country</mat-label>
+              <input matInput formControlName="country">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="contactform-header">
+            <h4>request details</h4>
+          </div>
+          <div class="contactform-body">
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Please describe your requirements</mat-label>
+              <textarea class="contactform-field-textarea" matInput required></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="submit-contact-form" type="submit" [disabled]="!contactForm.valid">submit</button>
+        </div>
+      </form>
+    </div>    
+  </div>
+</div>
