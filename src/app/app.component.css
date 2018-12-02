@@ -26,9 +26,9 @@ header{
 }
 
 .header--small{
-    height: 79px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 59px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,.4);
     box-shadow: 0 0 1px rgba(0,0,0,.4);
     background-color: #fff;
@@ -51,14 +51,19 @@ header{
 }
 
 .logo-link--small{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .navigation{
     position: relative;
     float: right;
     margin-top: 16px;
+    transition: all .4s ease-in-out;
+}
+
+.navigation--small{
+    margin-top: 3px;
 }
 
 .navigation-list-item{
