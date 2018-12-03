@@ -1,6 +1,6 @@
 .container{
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 90px;    
 }
 
 .intro h2{
@@ -13,6 +13,7 @@
 }
 
 .intro p{
+    padding: 10px 0px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 400;
@@ -41,7 +42,7 @@
     width: auto !important;
     color: #ffffff;
     letter-spacing: 2px;
-    background-color: #54b847;
+    background-color: #7ee8d4;
     padding: 10px 20px 10px 20px !important;
     border-width: 0px !important;
     border-color: #000000;

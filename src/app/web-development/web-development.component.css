@@ -1,0 +1,73 @@
+.hero-container{
+    margin-top: 109px;
+    margin-bottom: 120px;
+}
+
+.hero-content{
+    padding-top: 160px;    
+}
+
+.solutions-container{
+    padding: 120px 0px;
+    background-color: #d7e7ff17;
+}
+
+.head-title{
+    font-size: 58px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tag-line{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header-tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.head-img{
+    position: relative;
+}
+
+.image{
+    width: 100%;
+}
+
+.cover{
+    position: absolute;
+    bottom: 0px;
+    height: 155px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.solutions{
+    padding: 60px 0px;
+}
+
+.solution-item{
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.solution-item:hover{
+    /* transform: scaleY(0.66); */
+    transform: scale(1.08);    
+}
+
+.contact-section{
+    background-color: #ecedee;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
