@@ -1,0 +1,93 @@
+.hero-container{
+    margin-top: 109px;
+}
+
+.hero-content{
+    padding-top: 160px;
+    padding-bottom: 120px;
+}
+
+.head-title{
+    font-size: 58px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
+
+.fas{
+    color: rgb(238, 83, 83);
+}
+
+.tech-section{
+    padding: 120px 0px;
+}
+
+.tech-item{
+    padding: 25px 0px;
+}
+
+.framework-list{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0px;
+}
+
+.framework-list-item{
+    display: inline-block;
+    padding: 15px;
+}
+
+.framework-list-item-logo{
+    width: 100px;
+}
+
+.framework-list-item-title{
+    text-transform: capitalize;
+    
+}
+
+.image{
+    width: 100%;    
+}
+
+.typescript-logo, .express-logo, .mongodb-logo{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.html5-image{
+    width: 88%;
+    margin-bottom: 6px;
+}
+
+.firebase-image{
+    width: 64%;
+    margin-bottom: 12px;
+}
+
+.core-competence-info{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: -.022em;
+}
+
+.contact-section{
+    background-color: #ecedee;
+}

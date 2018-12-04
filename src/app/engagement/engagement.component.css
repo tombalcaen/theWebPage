@@ -1,0 +1,75 @@
+.hero-container{
+    margin-top: 109px;
+}
+
+.head-title{
+    font-size: 49px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header-tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
+
+.hero-content{
+    padding-top: 250px;
+    padding-bottom: 170px;
+}
+
+.background{
+    padding-top: 40px;
+}
+
+.flexible--big{
+    padding-bottom: 60px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.engagement-section{
+    padding: 120px;
+}
+
+.engagement-item{
+    margin: 20px 0px;
+}
+
+.engagement-item-body{
+
+}
+
+.engagement-item-body-title{
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1.2em;
+    position: relative;
+}
+
+.engagement-item-body-title h3{
+    color: #7ee8d4;
+}
+
+.engagement-item-body-info{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: -.022em;
+}
+
+.contact-section{
+    background-color: #ecedee;
+}

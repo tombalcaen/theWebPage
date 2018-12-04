@@ -13,6 +13,10 @@ import { WebDevelopmentComponent } from './web-development/web-development.compo
 import { MvpLabComponent } from './mvp-lab/mvp-lab.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { ProfessionalServicesComponent } from './professional-services/professional-services.component';
+import { EngagementComponent } from './engagement/engagement.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { TechComponent } from './tech/tech.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { ProfessionalServicesComponent } from './professional-services/professio
     WebDevelopmentComponent,
     MvpLabComponent,
     FrontpageComponent,
-    ProfessionalServicesComponent
+    ProfessionalServicesComponent,
+    EngagementComponent,
+    JobsComponent,
+    TechComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

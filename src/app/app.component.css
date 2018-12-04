@@ -70,6 +70,14 @@ header{
     display: inline-block;
 }
 
+.navigation-list-link:hover i{
+    font-weight: 900;
+}
+
+.navigation-list-item:hover>.navigation-dropdown{
+    max-height: 600px;
+}
+
 .navigation-list-item+.navigation-list-item{ 
     margin-left: 50px;
 }

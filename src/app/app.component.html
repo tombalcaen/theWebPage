@@ -11,25 +11,36 @@
           <ul class="navigation-list">
             <li class="navigation-list-item">
               <a class="navigation-list-link">company</a>
+              <ul class="navigation-dropdown" style="display: block;">
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-item-link" routerLink="engagement">Engagement options</a>                    
+                  </li>                  
+                </ul>
             </li>
-            <li class="navigation-list-item" [class.navigation-list-item--dropdown--show]="blnHover" (mouseover)="blnHover=true" (mouseout)="blnHover=false">
+            <li class="navigation-list-item"> <!-- [class.navigation-list-item--dropdown--show]="blnHover" (mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
               <a class="navigation-list-link">services</a>
               <ul class="navigation-dropdown" style="display: block;">
                 <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-item-link" routerLink="web-development">custom web application solutions</a>                    
+                  <a class="navigation-dropdown-item-link" routerLink="web-development">Custom web application solutions</a>                    
                 </li>
                 <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-item-link" routerLink="mvp-lab"><span>mvp</span> lab</a>
+                  <a class="navigation-dropdown-item-link" routerLink="mvp-lab"><span style="text-transform: uppercase;">mvp</span> lab</a>
                 </li>
                 <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-item-link" routerLink="professional-services">professional services</a>                  
+                  <a class="navigation-dropdown-item-link" routerLink="professional-services">Professional services</a>                  
                 </li>
               </ul>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link">process</a>
+            </li>            
+            <li class="navigation-list-item" routerLink="we-love-tech"> <!--(mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
+              <a class="navigation-list-link">we <i style="color: red;" class="far fa-heart"></i> tech</a> <!--[class.fas]="blnHover" -->
             </li>
-            <li class="navigation-list-item">
+            <li class="navigation-list-item" routerLink="we-want-you">
+              <a class="navigation-list-link">jobs</a>
+            </li>
+            <li class="navigation-list-item" routerLink="contact-us">
               <a class="navigation-list-link">contact</a>
             </li>
           </ul>

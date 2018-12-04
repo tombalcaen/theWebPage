@@ -3,13 +3,12 @@
     margin-bottom: 120px;
 }
 
-.hero-content{
-    padding-top: 160px;    
+.solutions-section, .methodology-section{
+    padding: 120px 0px;
 }
 
-.solutions-container{
-    padding: 120px 0px;
-    background-color: #d7e7ff17;
+.hero-content{
+    padding-top: 160px;    
 }
 
 .head-title{
@@ -46,18 +45,57 @@
     z-index: 100;
 }
 
+.title{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 300;
+    color: #234;
+}
+
+.method-title{
+    margin-bottom: 40px;
+}
+
+.method-item{
+
+}
+
+.method-item-body{
+
+}
+
+.method-item-body-title, .solution-item-body-title{
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1.2em;
+    position: relative;
+}
+
+.method-item-body-title h3, .solution-item-body-title h3{
+    color: #7ee8d4;
+}
+
+.method-item-body-info, .solution-item-body-info{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: -.022em;
+}
+
+.methodology-section{
+    background-color: #d7e7ff17; 
+}
+
 .solutions{
     padding: 60px 0px;
 }
 
 .solution-item{
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-
-.solution-item:hover{
-    /* transform: scaleY(0.66); */
-    transform: scale(1.08);    
+    margin: 40px 0px;
 }
 
 .contact-section{

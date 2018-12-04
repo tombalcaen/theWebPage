@@ -1,0 +1,42 @@
+.hero-container{
+    margin-top: 109px;
+    margin-bottom: 120px;
+}
+
+.solutions-section, .methodology-section{
+    padding: 120px 0px;
+}
+
+.hero-content{
+    padding-top: 160px;    
+}
+
+.head-title{
+    font-size: 58px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tag-line{
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header-tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.head-img{
+    position: relative;
+}
+
+.image{
+    width: 100%;
+}
+
+.contact-section{
+    background-color: #ecedee;
+}
