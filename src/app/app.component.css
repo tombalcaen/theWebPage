@@ -68,6 +68,7 @@ header{
 
 .navigation-list-item{
     display: inline-block;
+    outline: none;
 }
 
 .navigation-list-link:hover i{
@@ -184,3 +185,38 @@ header{
 a{
     cursor: pointer;
 }
+
+
+.get-in-touch{
+    padding: 5px 15px;
+    background: #7ee8d4;
+    border-radius: 50px;
+    /*color: #457DFF;*/
+    font-size: 12px;
+    /*font-family: "WeissenhofGrotesk-Medium",sans-serif;*/
+    letter-spacing: 0.8px;
+    box-shadow: 0 4px 4px 0 rgba(60,60,59,0.1);
+    transition: all .3s;
+    color: white;
+}
+
+.navigation-list-item .get-in-touch:hover{
+    opacity: 0.7;
+    border-bottom-color: #fff;    
+}
+
+
+/* .recent-work-learn_more{    
+    
+}
+
+.recent-work-learn_more a { 
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+    mix-blend-mode: lighten;
+}
+
+.recent-work-learn_more a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+} */

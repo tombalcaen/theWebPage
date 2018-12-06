@@ -37,36 +37,37 @@
     line-height: 40px;
 }
 
-.engagement-section{
-    padding: 120px;
+.engagement-step{
+    padding: 30px 0px;
 }
 
-.engagement-item{
-    margin: 20px 0px;
+.engagement-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;    
 }
 
-.engagement-item-body{
-
-}
-
-.engagement-item-body-title{
-    line-height: 1.2em;
-    font-weight: 400;
-    margin: 0 0 1.2em;
+.engagement-step-title{
     position: relative;
 }
 
-.engagement-item-body-title h3{
-    color: #7ee8d4;
+.engagement-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: #f6ccdc;
 }
 
-.engagement-item-body-info{
+.engagement-step-body p{
     text-align: left;
     font-size: 16px;
     max-width: 90%;
     word-wrap: break-word;
     line-height: 1.8;
-    color: #333;
+    color: #777;
     letter-spacing: -.022em;
 }
 

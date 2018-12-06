@@ -40,8 +40,8 @@
             <li class="navigation-list-item" routerLink="we-want-you">
               <a class="navigation-list-link">jobs</a>
             </li>
-            <li class="navigation-list-item" routerLink="contact-us">
-              <a class="navigation-list-link">contact</a>
+            <li class="navigation-list-item" routerLink="contact-us">              
+              <a class="navigation-list-link get-in-touch">get in touch</a>              
             </li>
           </ul>
         </nav>
@@ -49,4 +49,4 @@
     </div>
   </div>
 </header>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)" ></router-outlet>

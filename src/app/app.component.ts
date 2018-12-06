@@ -13,6 +13,10 @@ export class AppComponent {
 
   blnNarrow = false;
 
+  onActivate(event) {
+    window.scroll(0,0);    
+  }
+
   onScroll($event){    
     document.scrollingElement.scrollTop >= 100? this.blnNarrow = true : this.blnNarrow = false;
   }

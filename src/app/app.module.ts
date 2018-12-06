@@ -17,6 +17,7 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { CaseStudyComponent } from './case-study/case-study.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     EngagementComponent,
     JobsComponent,
     TechComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    CaseStudyComponent
   ],
   imports: [
     BrowserModule,

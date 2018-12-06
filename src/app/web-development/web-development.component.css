@@ -90,12 +90,51 @@
     background-color: #d7e7ff17; 
 }
 
-.solutions{
+/* .solutions{
     padding: 60px 0px;
 }
 
 .solution-item{
     margin: 40px 0px;
+} */
+
+
+.solutions-step{
+    padding: 45px 0px;
+}
+
+.solution-step{
+    padding: 30px 0px;
+}
+
+.solution-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;    
+}
+
+.solution-step-title{
+    position: relative;
+}
+
+.solution-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: #c7dbfb;
+}
+
+.solution-step-body p{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
 }
 
 .contact-section{
