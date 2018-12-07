@@ -1,6 +1,38 @@
 <header class="header" [class.header--small]="blnNarrow">  
-  <div class="container">
+  <div class="container" [class.mm-wrap--show]="blnMmShow">
     <div class="row">
+      <div class="col-12 mm-wrap">
+        <div *ngIf="blnMmShow" class="mm-content">
+          <div class="mobile-navigation" id="mobileNavigation">
+            <ul class="mobile-navigation-list text-center">
+              <li class="mobile-navigation-list-item">
+                <a class="mobile-navigation-list-link" tabindex="0" role="button">test</a>
+                <ul class="mobile-navigation-dropdown">
+                  <li>sub test1</li>
+                </ul>
+              </li>
+              <li class="mobile-navigation-list-item">
+                <a class="mobile-navigation-list-link">test</a>
+                <ul>
+                  <li>sub test2</li>
+                  <li>sub test2.0</li>
+                  <li>sub test2.1</li>
+                </ul>
+              </li>
+              <li class="mobile-navigation-list-item">
+                <a class="mobile-navigation-list-link">test</a>
+              </li>
+              <li class="mobile-navigation-list-item">
+                <a class="mobile-navigation-list-link">test</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">      
       <div class="col-12">
         <!-- <div class="logo"> -->
         <a href="/">
@@ -31,9 +63,9 @@
                 </li>
               </ul>
             </li>
-            <li class="navigation-list-item">
+            <!-- <li class="navigation-list-item">
               <a class="navigation-list-link">process</a>
-            </li>            
+            </li>             -->
             <li class="navigation-list-item" routerLink="we-love-tech"> <!--(mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
               <a class="navigation-list-link">we <i style="color: red;" class="far fa-heart"></i> tech</a> <!--[class.fas]="blnHover" -->
             </li>
@@ -44,6 +76,11 @@
               <a class="navigation-list-link get-in-touch">get in touch</a>              
             </li>
           </ul>
+          <a class="burger" (click)="onMobileNav()">
+            <span class="burger-item burger-item-1"></span>
+            <span class="burger-item burger-item-2"></span>
+            <span class="burger-item burger-item-3"></span>
+          </a>
         </nav>
       </div>
     </div>

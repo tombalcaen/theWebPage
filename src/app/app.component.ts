@@ -12,13 +12,24 @@ export class AppComponent {
   title = 'hyperion';
 
   blnNarrow = false;
+  blnMmShow = false;
 
   onActivate(event) {
     window.scroll(0,0);    
+    if(this.isMobileDevice()) this.blnNarrow = true;
   }
 
   onScroll($event){    
-    document.scrollingElement.scrollTop >= 100? this.blnNarrow = true : this.blnNarrow = false;
+    document.scrollingElement.scrollTop >= 100 || this.isMobileDevice()? this.blnNarrow = true : this.blnNarrow = false;
+    
   }
+
+  onMobileNav(){    
+    this.blnMmShow = !this.blnMmShow;    
+  }
+
+  isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
 
 }

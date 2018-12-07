@@ -8,14 +8,33 @@
 }
 
 .hero-content{
-    padding-top: 160px;    
+    padding-top: 100px;    
 }
 
 .head-title{
-    font-size: 58px;
+    font-size: 40px;
     font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
+}
+
+.header-tagline{
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
+
+.background{
+    position: relative;
+    padding-top: 50px;
 }
 
 .tag-line{
@@ -28,9 +47,9 @@
     font-weight: 400;
 }
 
-.head-img{
+/* .head-img{
     position: relative;
-}
+} */
 
 .image{
     width: 100%;
@@ -39,7 +58,7 @@
 .cover{
     position: absolute;
     bottom: 0px;
-    height: 155px;
+    height: 90px;
     width: 100%;
     background-color: #ffffff;
     z-index: 100;
