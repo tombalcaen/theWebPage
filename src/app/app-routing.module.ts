@@ -10,6 +10,7 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { CaseStudyComponent } from './case-study/case-study.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'web-development', component: WebDevelopmentComponent },
   { path: 'professional-services', component: ProfessionalServicesComponent },
   { path: 'engagement', component: EngagementComponent },
+  { path: 'case-study', component: CaseStudyComponent },
   { path: 'we-want-you', component: JobsComponent },
   { path: 'we-love-tech', component: TechComponent },
   { path: 'contact-us', component: ContactPageComponent }

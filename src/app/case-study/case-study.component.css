@@ -1,0 +1,71 @@
+.hero-container{
+    margin-top: 109px;
+}
+
+.head-title{
+    font-size: 40px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header-tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
+
+.header-logo{
+    width: auto; 
+    padding: 40px;
+}
+
+.header-logo .logo{
+    height: 100px;
+}
+
+.image{
+    width: 100%;    
+}
+
+.case-detail-step{
+    padding: 30px 0px;
+}
+
+.case-detail-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.case-detail-step-title{
+    position: relative;
+}
+
+.case-detail-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: #f6ccdc;
+}
+
+.case-detail-step-body p{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+}

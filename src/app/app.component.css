@@ -257,7 +257,7 @@ a{
     top: 59px;
     left: 0;
     height: 0;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     padding: 0;    
     transition: all .4s ease-in-out;
