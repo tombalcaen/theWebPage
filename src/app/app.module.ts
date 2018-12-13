@@ -18,6 +18,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CaseStudyComponent } from './case-study/case-study.component';
     JobsComponent,
     TechComponent,
     ContactPageComponent,
-    CaseStudyComponent
+    CaseStudyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'case-study', component: CaseStudyComponent },
   { path: 'we-want-you', component: JobsComponent },
   { path: 'we-love-tech', component: TechComponent },
-  { path: 'contact-us', component: ContactPageComponent }
+  { path: 'contact-us', component: ContactPageComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({

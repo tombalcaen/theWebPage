@@ -1,0 +1,57 @@
+.hero-container{
+    margin-top: 109px;
+}
+
+.head-title{
+    font-size: 49px;
+    font-family: "TTCommons-Medium", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header-tagline{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title h2{
+    margin: 1.5rem 0rem;
+    font-size: 48px;
+    line-height: 1;        
+    font-weight: 300;
+    color: #234;
+}
+
+.hero-content{
+    padding-top: 250px;
+    padding-bottom: 170px;
+}
+
+.background{
+    position: relative;
+    padding-top: 40px;
+}
+
+.image{
+    width: 100%;
+}
+
+.cover{
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.story-body{
+    padding: 10px 0px;
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+}
