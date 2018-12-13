@@ -18,18 +18,29 @@ export class EmailService {
     })
   };
 
-  body = 
-  { personalizations: 
-    [ { to: [{ email: 'tom.balcaen88@gmail.com'}],
-        subject: 'Hello, World!' } 
-    ],
-   from: { email: 'sam.smith@example.com' },
-   content: [ { type: 'text/plain', value: 'Hello, World!' } ] 
-  };
+  body : Object = {};
 
 
   sendEmail(){
-    console.log("sendemail")
+    
+    this.body = 
+    { personalizations: 
+      [ { to: [{ email: 'tom.balcaen88@gmail.com'}],
+          subject: 'Flock contact request!' } 
+      ],
+    from: { email: 'tom.balcaen88@gmail.com' },
+    content: [ { type: 'text/plain', value: `Hello, World!
+    <p>fullname: tom balcaen</p>
+    <p>company: flock consulting</p>
+    <p>phone: 0479752242</p>
+    <p>email: <a href="mailto:tom.balcaen88@gmail.com">tom.balcaen88@gmail.com</a></p>
+    <p>country: BE</p>
+    <p>details: Dit zijn allemaal details</p>
+    ` } ] 
+    };
+
+
+
     this.http.post(this.endpoint,this.body,this.httpOptions).subscribe((response)=>{
       console.log(response)
     });
