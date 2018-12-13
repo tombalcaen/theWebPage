@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-
-
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +13,7 @@ export class EmailService {
   httpOptions = {
     headers: new HttpHeaders({
       'content-type': 'application/json',
-      authorization: 'Bearer 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'
+      authorization: 'Bearer ' + environment.SENDGRID_API_KEY
     })
   };
 
