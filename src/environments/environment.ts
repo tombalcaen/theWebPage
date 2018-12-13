@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  SENDGRID_API_KEY:'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'
 };
 
 /*

@@ -13,7 +13,7 @@ export class EmailService {
   httpOptions = {
     headers: new HttpHeaders({
       'content-type': 'application/json',
-      authorization: 'Bearer ' + process.env.SENDGRID_API_KEY
+      authorization: 'Bearer ' + "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" //process.env.SENDGRID_API_KEY
     })
   };
 
