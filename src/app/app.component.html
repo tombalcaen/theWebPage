@@ -41,20 +41,6 @@
         <!-- </div> -->
         <nav class="navigation navigation-hor" [class.navigation--small]="blnNarrow">
           <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link">company</a>
-              <ul class="navigation-dropdown" style="display: block;">
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-item-link" routerLink="engagement">Engagement options</a>                    
-                  </li>
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-item-link" routerLink="we-want-you">jobs</a>
-                  </li>
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-item-link" routerLink="about">about</a>
-                  </li>                  
-                </ul>
-            </li>
             <li class="navigation-list-item"> <!-- [class.navigation-list-item--dropdown--show]="blnHover" (mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
               <a class="navigation-list-link">services</a>
               <ul class="navigation-dropdown" style="display: block;">
@@ -69,6 +55,20 @@
                 </li> -->
               </ul>
             </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link">company</a>
+              <ul class="navigation-dropdown" style="display: block;">
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-item-link" routerLink="engagement">Engagement options</a>                    
+                  </li>
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-item-link" routerLink="we-want-you">jobs</a>
+                  </li>
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-item-link" routerLink="about">about</a>
+                  </li>                  
+                </ul>
+            </li>            
             <!-- <li class="navigation-list-item">
               <a class="navigation-list-link">process</a>
             </li>             -->

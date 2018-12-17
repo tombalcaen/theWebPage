@@ -3,12 +3,37 @@
     margin-bottom: 120px;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .hero-container{         
+            margin-bottom: 0px;
+        }
+    }
+
 .solutions-section, .benefits-section, .process-section{
     padding: 80px 0px;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .solutions-section, .benefits-section, .process-section{
+            padding: 40px 0px;
+        }
+    }
+
 .hero-content{
     padding-top: 120px;    
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) {
+    .hero-content{
+        padding-top: 60px;
+        /* padding-bottom: 60px; */
+    }
 }
 
 .head-title{
@@ -18,13 +43,21 @@
     font-weight: 500;
 }
 
+@media only screen 
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .head-title{
+            font-size: 30px;
+        }
+    }
+
 .header-tagline{
     padding-top: 40px;
     font-size: 24px;
     font-weight: 400;
 }
 
-.title h2{
+/* .title h2{
     margin: 1.5rem 0rem;
     font-size: 48px;
     line-height: 1;        
@@ -32,9 +65,25 @@
     color: #234;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .title h2{            
+            font-size: 30px;            
+        }
+    } */
+
 .background{
     padding-top: 80px;
 }
+
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .background{
+            padding-top: 0px;
+        }
+    }
 
 /* .tag-line{
     margin-top: 100px;
@@ -62,6 +111,18 @@
     color: #234;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .benefits-header-title h2{            
+            font-size: 30px;
+        }
+
+        .benefits-tagline{
+            justify-content: center!important;
+        }
+    }
+
 .benefits-tagline-body p::before{
     position: absolute;    
     left: 0;
@@ -74,12 +135,20 @@
 }
 
 .benefits-items{
-    padding: 40px 0px;
+    padding: 20px 0px;
 }
 
 .card_no_padding{
     padding: 0;
 }
+
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .card_no_padding{
+            padding: 15px;
+        }
+    }
 
 .card{
     border: none;
@@ -90,6 +159,14 @@
     margin: 50px 0px;
     font-size: 40px;
 }
+
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .card-img-top{
+            margin: 20px 0px;
+        }
+    }
 
 .card-title{
     display: block;
@@ -113,6 +190,14 @@
     background-color: transparent;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .card-body{
+            padding-bottom: 0px;
+        }
+    }
+
 .card-body--large{
     padding-bottom: 60px;
 }
@@ -127,6 +212,14 @@
     letter-spacing: -.022em;
 }
 
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .card-text{             
+            max-width: 100%;            
+        }
+    }
+
 .card-text p:last-child{
     margin: 0;
 }
@@ -138,6 +231,14 @@
     font-weight: 300;
     color: #234;
 }
+
+@media only screen
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .process-header-title h2{
+            font-size: 30px;            
+        }
+    }
 
 .process-header-tagline p::before{
     position: absolute;    

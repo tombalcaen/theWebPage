@@ -7,9 +7,29 @@
     padding: 120px 0px;
 }
 
+@media only screen 
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .hero-container{
+            margin-bottom: 60px;
+        }
+
+        .solutions-section, .methodology-section{
+            padding: 60px 0px;
+        }
+    }
+
 .hero-content{
     padding-top: 100px;    
 }
+
+@media only screen 
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .hero-content{
+            padding-top: 0px;
+        }
+    }
 
 .head-title{
     font-size: 40px;
@@ -37,6 +57,14 @@
     padding-top: 50px;
 }
 
+@media only screen 
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .background{
+            padding-top: 0px;
+        }
+    }
+
 .tag-line{
     font-size: 24px;
     font-weight: 400;
@@ -63,6 +91,14 @@
     background-color: #ffffff;
     z-index: 100;
 }
+
+@media only screen 
+    and (max-width: 812px)
+    and (orientation: portrait){
+        .cover{
+            height: 50px;
+        }
+    }
 
 .title{
     margin: 1.5rem 0rem;
@@ -155,6 +191,14 @@
     color: #777;
     letter-spacing: -.022em;
 }
+
+@media only screen 
+    and (max-width: 812px )
+    and (orientation: portrait){
+        .solution-step-body{
+            padding-top: 25px;
+        }
+    }
 
 .contact-section{
     background-color: #ecedee;
