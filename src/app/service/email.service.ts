@@ -13,7 +13,7 @@ export class EmailService {
   httpOptions = {
     headers: new HttpHeaders({
       'content-type': 'application/json',
-      authorization: 'Bearer ' + process.env.SENDGRID_API_KEY
+      authorization: 'Bearer '//+ process.env.SENDGRID_API_KEY
     })
   };
 
@@ -40,9 +40,9 @@ export class EmailService {
 
 
 
-    this.http.post(this.endpoint,this.body,this.httpOptions).subscribe((response)=>{
-      console.log(response)
-    });
+    // this.http.post(this.endpoint,this.body,this.httpOptions).subscribe((response)=>{
+    //   console.log(response)
+    // });
   }
 
   
