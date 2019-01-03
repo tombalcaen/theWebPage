@@ -34,7 +34,7 @@ header{
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     height: 70px;
-    width: 70px;
+    /* width: 70px; */
     cursor: pointer;
     content: "";
     background-image: url("../assets/Vecteezy-17-8500-10.jpg");
@@ -44,8 +44,20 @@ header{
 
 .logo-link--small{
     height: 40px;
-    width: 40px;
+    /* width: 40px;     */
 }
+
+/* .logo-text{
+    font-size: 3rem;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-text-link--small{
+    font-size: 2rem;
+} */
 
 .navigation{
     position: relative;
