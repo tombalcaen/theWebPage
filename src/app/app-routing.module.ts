@@ -5,6 +5,7 @@ import {FrontpageComponent} from './frontpage/frontpage.component';
 import {ContactComponent} from './contact/contact.component';
 import {MvpLabComponent} from './mvp-lab/mvp-lab.component';
 import {WebDevelopmentComponent} from './web-development/web-development.component';
+import { WebdesignComponent } from './webdesign/webdesign.component';
 import {ProfessionalServicesComponent} from './professional-services/professional-services.component';
 import { EngagementComponent } from './engagement/engagement.component';
 import { JobsComponent } from './jobs/jobs.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'mvp-lab', component: MvpLabComponent },
   { path: 'web-development', component: WebDevelopmentComponent },
+  { path: 'webdesign', component: WebdesignComponent },  
   { path: 'professional-services', component: ProfessionalServicesComponent },
   { path: 'engagement', component: EngagementComponent },
   { path: 'case-study', component: CaseStudyComponent },

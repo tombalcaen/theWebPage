@@ -20,6 +20,7 @@ import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
 import { AboutComponent } from './about/about.component';
+import { WebdesignComponent } from './webdesign/webdesign.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
     TechComponent,
     ContactPageComponent,
     CaseStudyComponent,
-    AboutComponent
+    AboutComponent,
+    WebdesignComponent
   ],
   imports: [
     BrowserModule,
