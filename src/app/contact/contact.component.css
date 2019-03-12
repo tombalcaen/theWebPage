@@ -49,6 +49,12 @@
 
 .contactform-field-textarea{
     height: 270px;
+    resize: none;
+}
+
+.contactform-field-source{
+    height: 105px;
+    resize: none;
 }
 
 .submit-contact-form{
@@ -64,8 +70,8 @@
     -webkit-border-radius: 6px !important;
 }
 
-.contactform-field-textarea{
-    resize: none;
+.disabled{
+    cursor: not-allowed;
 }
 
 ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex.mat-form-field-flex{

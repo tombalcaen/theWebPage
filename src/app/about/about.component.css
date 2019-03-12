@@ -24,7 +24,11 @@
 
 .hero-content{
     padding-top: 250px;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
+}
+
+.story-section{
+    padding-bottom: 120px;
 }
 
 @media only screen 
@@ -64,6 +68,57 @@
 
 .story-body{
     padding: 10px 0px;
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .believe-container{     
+        padding: 80px 0px;
+    }
+  }
+
+.believe-step{
+    padding: 30px 0px;
+}
+
+.believe-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;    
+}
+
+.believe-step-title{
+    position: relative;
+}
+
+.believe-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: #c7dbfb;
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .believe-step-body{
+        padding: 20px 15px;
+    }
+}
+
+
+.believe-step-body p{
     text-align: left;
     font-size: 16px;
     max-width: 90%;

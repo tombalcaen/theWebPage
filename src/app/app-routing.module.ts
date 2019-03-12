@@ -13,6 +13,9 @@ import { TechComponent } from './tech/tech.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
 import { AboutComponent } from './about/about.component';
+import { FaqComponent } from './faq/faq.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
@@ -27,7 +30,9 @@ const routes: Routes = [
   { path: 'we-want-you', component: JobsComponent },
   { path: 'we-love-tech', component: TechComponent },
   { path: 'contact-us', component: ContactPageComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'faq', component: FaqComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent }
 ];
 
 @NgModule({

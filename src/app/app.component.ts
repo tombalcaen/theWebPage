@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hyperion';
+
+  constructor(private router: Router){
+    this.router.events.subscribe((event) => {
+      this.blnMmShow = false;
+      window.scroll(0,0);
+  });
+  }
 
   blnNarrow = false;
   blnMmShow = false;
@@ -25,6 +33,7 @@ export class AppComponent {
   }
 
   onMobileNav(){    
+    console.log("yeah")
     this.blnMmShow = !this.blnMmShow;    
   }
 

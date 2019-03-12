@@ -95,6 +95,15 @@
     color: #333;
 }
 
+.our-story-body h2{
+    color: #52e2ab;
+    font-size: 1.6666666666666665rem;
+    line-height: 3.111111111111111rem;
+    letter-spacing: -0.005555555555555556rem;
+    /* font-size: 24px; */
+    font-weight: 400;
+}
+
 .hero-content{
     padding-top: 160px;
     padding-bottom: 240px;

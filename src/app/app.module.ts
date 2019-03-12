@@ -4,7 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import {MatFormFieldModule,MatInputModule} from '@angular/material';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
 import { AboutComponent } from './about/about.component';
 import { WebdesignComponent } from './webdesign/webdesign.component';
+import { FaqComponent } from './faq/faq.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +42,9 @@ import { WebdesignComponent } from './webdesign/webdesign.component';
     ContactPageComponent,
     CaseStudyComponent,
     AboutComponent,
-    WebdesignComponent
+    WebdesignComponent,
+    FaqComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,9 @@ import { WebdesignComponent } from './webdesign/webdesign.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
+    MatExpansionModule,
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+.hero-container{
+    margin-top: 109px;
+    margin-bottom: 120px;
+}
+
+p, li{
+    line-height: 160%;
+    font-size: 15px;
+    font-weight: 300;
+}

@@ -1,0 +1,12 @@
+.hero-container{
+    margin-top: 109px;
+    margin-bottom: 120px;
+}
+
+.faq-header{
+    font-weight: 300;
+}
+
+mat-panel-title{
+    font-size: 18px;
+}

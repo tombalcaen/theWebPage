@@ -1,36 +1,22 @@
 <header class="header" [class.header--small]="blnNarrow">  
-  <div class="container" [class.mm-wrap--show]="blnMmShow">
+  
+  
+  <div class="container p-0 mobilenav" [class.mm-wrap--show]="blnMmShow">
     <div class="row">
-      <div class="col-12 mm-wrap">
-        <div *ngIf="blnMmShow" class="mm-content">
-          <div class="mobile-navigation" id="mobileNavigation">
-            <ul class="mobile-navigation-list text-center">
-              <li class="mobile-navigation-list-item">
-                <a class="mobile-navigation-list-link" tabindex="0" role="button">test</a>
-                <ul class="mobile-navigation-dropdown">
-                  <li>sub test1</li>
-                </ul>
-              </li>
-              <li class="mobile-navigation-list-item">
-                <a class="mobile-navigation-list-link">test</a>
-                <ul>
-                  <li>sub test2</li>
-                  <li>sub test2.0</li>
-                  <li>sub test2.1</li>
-                </ul>
-              </li>
-              <li class="mobile-navigation-list-item">
-                <a class="mobile-navigation-list-link">test</a>
-              </li>
-              <li class="mobile-navigation-list-item">
-                <a class="mobile-navigation-list-link">test</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-12 p-0">
+        <ul class="mm">
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="webdesign">webdesign</a></li>
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="web-development">application dev</a></li>          
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="professional-services">Staff augmentation</a></li>
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="engagement">engagement options</a></li>
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="we-want-you">jobs</a></li>
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="about">about</a></li>
+        </ul>
       </div>
     </div>
   </div>
+
+
   <div class="container">
     <div class="row">      
       <div class="col-12">
@@ -53,9 +39,9 @@
                 <!-- <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-item-link" routerLink="mvp-lab"><span style="text-transform: uppercase;">mvp</span> lab</a>
                 </li> -->
-                <!-- <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-item-link" routerLink="professional-services">Professional services</a>                  
-                </li> -->
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-item-link" routerLink="professional-services">Staff augmentation</a>                  
+                </li>
               </ul>
             </li>
             <li class="navigation-list-item">
@@ -96,3 +82,69 @@
   </div>
 </header>
 <router-outlet (activate)="onActivate($event)" ></router-outlet>
+<footer class="container-fluid" style="background: #F7F7F9;">
+  <div class="container">
+    <div class="row py-4 justify-content-around">
+      <div class="col-12 col-md-3" style="font-weight: 200;">
+        <h2 class="footer-header">Contact info</h2>
+        <div>Dam 13 </div>
+        <div>8500 Kortrijk</div>
+        <div>+32 479 75 22 42</div>
+        <div>sales@ahodos.be</div>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2 class="footer-header">Services</h2>
+        <ul class="p-0" style="list-style: none;">
+          <li>
+            <a routerLink="/webdesign">web design</a>
+          </li>
+          <li>
+            <a routerLink="/web-development">web application development</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2 class="footer-header">Company</h2>
+        <ul class="p-0" style="list-style: none;">
+          <li style="text-transform: uppercase;">
+            <a routerLink="/faq">faq</a>
+          </li>
+          <li>
+            <a routerLink="/privacy-policy">privacy policy</a>
+          </li>
+          <li>
+            <a routerLink="/contact">contact us</a>
+          </li>    
+          <li>
+            <a routerLink="/engagement">engagement</a>
+          </li>
+          <li>
+            <a routerLink="/we-want-you">jobs</a>
+          </li>
+          <li>
+            <a routerLink="/about">about</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2 class="footer-header">Want to know more?</h2>
+        <a routerLink="contact-us" class="btn btn-outline-info" style="color: darkcyan !important; border-color: darkcyan !important;">Get in touch</a>
+        <!-- <ul>
+          <li>angular</li>
+          <li>express</li>
+          <li>mongodb</li>
+          <li>nodejs</li>
+          <li>frontend</li>
+          <li>heroku</li>
+          <li>aws</li>
+        </ul> -->
+      </div>
+    </div>
+    <div class="row p-5 justify-content-center" style="border-top: 1px solid #e0e0e0;">
+      <div class="col-12 text-center">
+          © 2019 Ahodos • All Rights Reserved |
+      </div>
+    </div>
+  </div>
+  
+</footer>

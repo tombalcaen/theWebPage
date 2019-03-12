@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { EmailService } from '../service/email.service';
 
 
@@ -16,23 +16,32 @@ export class ContactComponent implements OnInit {
     this.createContactForm();
    }
 
+  budget = [{value:"€0 - €5 000"},
+            // {value:"€2 500 - €10 000"},
+            {value:"€5 000 - €30 000"},
+            {value:"€30 000 - €60 000"},
+            {value:"€60 000+"}]
+
   ngOnInit() {
     
   }
 
   createContactForm(){
     this.contactForm = this.fb.group({
-      fullName: '',
+      fullName: ['',Validators.required],
       company: '',
       phone: '',
-      email: '',
+      email: ['',Validators.required],
+      budget: '',
       country: '',
+      requirements: ['',Validators.required],
+      source: ''
     })
   }
 
   onSubmit(form){
     console.log(form)
-    this._email.sendEmail();    
+    this._email.sendEmail(form);    
   }
 
 }

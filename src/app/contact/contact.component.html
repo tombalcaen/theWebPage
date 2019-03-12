@@ -28,6 +28,15 @@
               <input matInput formControlName="email" required>
             </mat-form-field>
             <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>Budget</mat-label>
+              <mat-select formControlName="budget">                
+                <mat-option>Please select</mat-option>
+                <mat-option *ngFor="let b of budget" [value]="b.value">
+                  {{b.value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
               <mat-label>Country</mat-label>
               <input matInput formControlName="country">
             </mat-form-field>
@@ -40,12 +49,16 @@
           <div class="contactform-body">
             <mat-form-field class="contactform-field" appearance="fill">
               <mat-label>Please describe your requirements</mat-label>
-              <textarea class="contactform-field-textarea" matInput required></textarea>
+              <textarea formControlName="requirements" class="contactform-field-textarea" matInput required></textarea>
+            </mat-form-field>
+            <mat-form-field class="contactform-field" appearance="fill">
+              <mat-label>How did you hear from us?</mat-label>
+              <textarea formControlName="source" class="contactform-field-source" matInput></textarea>
             </mat-form-field>
           </div>
         </div>
         <div class="col-12 text-center">
-          <button class="submit-contact-form" type="submit" [disabled]="!contactForm.valid">submit</button>
+          <button class="submit-contact-form" type="submit" [class.disabled]="!contactForm.valid" [disabled]="!contactForm.valid" style="cursor: pointer;">Contact us</button>
         </div>
       </form>
     </div>    
