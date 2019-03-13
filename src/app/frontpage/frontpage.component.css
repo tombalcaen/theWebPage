@@ -228,7 +228,8 @@
     left: 0;
     position: absolute;
     width: 80px;
-    background-color: #c7dbfb;
+    /* background-color: #c7dbfb; */
+    background-color: var(--ahodos-green);
 }
 
 @media only screen 
@@ -375,6 +376,26 @@
     letter-spacing: 2px;
     /* background-color: #54b847; */
     background-color: #c7dbfb;
+    padding: 10px 20px 10px 20px !important;
+    border-width: 0px !important;
+    border-color: #000000;
+    border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    text-transform: capitalize;
+}
+
+.button-cta{
+    padding-bottom: 80px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.button-cta a{
+    width: auto !important;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background-color: #9ae3d2;
     padding: 10px 20px 10px 20px !important;
     border-width: 0px !important;
     border-color: #000000;

@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+*{
+    --ahodos-green: #52e2ab;
+    --ahodos-green-2: #9ae3d2;
+    --ahodos-green-bg: #52e2ab;
+    --ahodos-green-2-bg: #9ae3d2;
+}
+
 .highlight-green{
     color: #7ee8d4;
 }
@@ -14,9 +21,17 @@
 }
 
 .ahodos-green{
-    color: #52e2ab;
+    color: #52e2ab !important;
 }
 
 .ahodos-green-bg{
-    background-color: #52e2ab;
+    background-color: #52e2ab !important;
+}
+
+.ahodos-green-2{
+     color: #9ae3d2 !important;
+}
+
+.ahodos-green-2-bg{
+    background-color: #9ae3d2 !important;
 }

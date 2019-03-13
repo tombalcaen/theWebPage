@@ -57,7 +57,7 @@
     resize: none;
 }
 
-.submit-contact-form{
+/* .submit-contact-form{
     width: auto !important;
     color: #ffffff;
     letter-spacing: 2px;
@@ -68,6 +68,25 @@
     border-radius: 6px !important;
     -moz-border-radius: 6px !important;
     -webkit-border-radius: 6px !important;
+} */
+
+.header-cta{
+    margin-top: 30px; 
+    background-color: transparent;
+}
+
+.header-cta button{
+    width: auto !important;
+    color: #ffffff;
+    letter-spacing: 2px;
+    /* background-color: #9ae3d2; */
+    padding: 10px 20px 10px 20px !important;
+    border-width: 0px !important;
+    border-color: #000000;
+    border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    text-transform: capitalize;
 }
 
 .disabled{
