@@ -1,5 +1,5 @@
 header{
-    height: 109px;
+    height: 81px;
     top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -33,17 +33,16 @@ header{
 .logo-link{
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    height: 70px;
+    height: 40px;
     /* width: 70px; */
     cursor: pointer;
     content: "";
-    background-image: url("../assets/Vecteezy-17-8500-10.jpg");
     background-repeat: no-repeat;
     background-size: 198px 25px;
 }
 
 .logo-link--small{
-    height: 40px;
+    height: 20px;
     /* width: 40px;     */
 }
 
@@ -62,7 +61,7 @@ header{
 .navigation{
     position: relative;
     float: right;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     transition: all .4s ease-in-out;
 }
 
@@ -189,7 +188,7 @@ header{
 }
 
 .navigation-dropdown-item-link:hover{
-    color: #c7dbfb;
+    color: #9ae3d2;
 }
 
 a{

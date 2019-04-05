@@ -15,6 +15,8 @@ import { CaseStudyComponent } from './case-study/case-study.component';
 import { AboutComponent } from './about/about.component';
 import { FaqComponent } from './faq/faq.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { CloudPlatformComponent } from './cloud-platform/cloud-platform.component';
+import { InsightsComponent } from './insights/insights.component';
 
 
 const routes: Routes = [
@@ -23,9 +25,11 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'mvp-lab', component: MvpLabComponent },
   { path: 'web-development', component: WebDevelopmentComponent },
+  { path: 'cloud-platform', component: CloudPlatformComponent },
   { path: 'webdesign', component: WebdesignComponent },  
   { path: 'professional-services', component: ProfessionalServicesComponent },
   { path: 'engagement', component: EngagementComponent },
+  { path: 'insights', component: InsightsComponent },
   { path: 'case-study', component: CaseStudyComponent },
   { path: 'we-want-you', component: JobsComponent },
   { path: 'we-love-tech', component: TechComponent },

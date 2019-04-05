@@ -25,6 +25,8 @@ import { AboutComponent } from './about/about.component';
 import { WebdesignComponent } from './webdesign/webdesign.component';
 import { FaqComponent } from './faq/faq.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { CloudPlatformComponent } from './cloud-platform/cloud-platform.component';
+import { InsightsComponent } from './insights/insights.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     AboutComponent,
     WebdesignComponent,
     FaqComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    CloudPlatformComponent,
+    InsightsComponent
   ],
   imports: [
     BrowserModule,

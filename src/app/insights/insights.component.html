@@ -1,0 +1,54 @@
+<section class="hero-container" style="background-color: #FCFCFC;">
+  <div class="container-fluid p-0">
+    <div class="row p-0 m-0" style="position: relative;">      
+      <div class="col-12 hero-content" style="height: 400px; background-image: url('../assets/happy_about.jpg')">
+
+      </div>
+    </div>
+    <div class="row m-0 divider-big" style="background-color: darkslategrey; height: 50px; width: 100%;"></div>
+  </div>
+  <div class="container p-0">
+    <div class="row p-0 m-0 justify-content-center" [class.no-results]="true"></div>
+    <div class="row m-0 p-5 justify-content-center featured">
+      <div class="col-12 mx-4 p-0 featured-card box-shadow">
+        <div class="" style="height: 100%; background-color: white;">
+          <a [routerLink]=[insights,testUid]>
+            <div class="card-image card-image--featured">
+              <div class="backImg">
+
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-body-inner">
+                <span class="badge badge-info">Featured</span>
+                <h6>12 mei 2018 By Tom Balcaen</h6>
+                <h4>Dit is een titel</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row  m-0 p-5 justify-content-between">
+      <div *ngFor="let i of insights" class="col-12 col-md-4 normal-card" style="height: 540px;">
+        <div class="box-shadow" style="height: 100%; background-color: white;">
+          <a>
+            <div class="card-image card-image--normal">
+              <div class="backImg">
+
+              </div>
+            </div>
+            <div class="card-body card-body--normal position-relative">
+              <div class="card-body-inner">
+                <h6>12 mei 2018 By Tom Balcaen</h6>
+                <h4>Dit is een titel</h4>
+              </div>
+              <div class="card-body-link">read</div>
+              <div class="card-body-tags">cloud</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

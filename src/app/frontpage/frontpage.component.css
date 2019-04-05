@@ -105,7 +105,7 @@
 }
 
 .hero-content{
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 240px;
 }
 
@@ -153,7 +153,11 @@
 }
 
 .card-img-top{
-    width: 120px;
+    /* width: 120px;
+    margin: 50px auto; */
+    max-width: 80%;
+    display: block;
+    height: auto;
     margin: 50px auto;
 }
 

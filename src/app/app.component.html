@@ -5,8 +5,9 @@
     <div class="row">
       <div class="col-12 p-0">
         <ul class="mm">
-          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="webdesign">webdesign</a></li>
+          <!-- <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="webdesign">webdesign</a></li> -->          
           <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="web-development">application dev</a></li> 
+          <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="cloud-platform">Cloud strategy consulting</a></li>
           <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="mvp-lab">MVP laboratory</a></li>
           <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="professional-services">Staff augmentation</a></li>
           <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="engagement">engagement options</a></li>
@@ -22,8 +23,8 @@
     <div class="row">      
       <div class="col-12">
         <!-- <div class="logo"> -->
-        <a href="/">
-          <img class="logo-link" [class.logo-link--small]="blnNarrow" src="../assets/logo.png">
+        <a href="/" style="vertical-align: -webkit-baseline-middle;">
+          <img class="logo-link" [class.logo-link--small]="blnNarrow" src="../assets/ahodos_fulllogo_843x160.png">
         </a>
         <!-- </div> -->
         <nav class="navigation navigation-hor" [class.navigation--small]="blnNarrow">
@@ -31,12 +32,16 @@
             <li class="navigation-list-item"> <!-- [class.navigation-list-item--dropdown--show]="blnHover" (mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
               <a class="navigation-list-link">services</a>
               <ul class="navigation-dropdown" style="display: block;">
-                <li class="navigation-dropdown-item">
+                <!-- <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-item-link" routerLink="webdesign">Webdesign</a>
-                </li>
+                </li> -->
                 <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-item-link" routerLink="web-development">Custom web application solutions</a>
                 </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-item-link" routerLink="cloud-platform">Cloud strategy consulting</a>
+                  <!-- <li class="mm-item"><a class="mm-item-link" click="onMobileNav()" routerLink="cloud-platform">Cloud strategy consulting</a></li> -->
+                </li>                                
                 <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-item-link" routerLink="mvp-lab"><span style="text-transform: uppercase;">mvp</span> laboratory</a>
                 </li>
@@ -62,6 +67,9 @@
             <!-- <li class="navigation-list-item">
               <a class="navigation-list-link">process</a>
             </li>             -->
+            <li class="navigation-list-item" routerLink="insights"> <!--(mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
+              <a class="navigation-list-link">insights</a> <!--[class.fas]="blnHover" -->
+            </li>
             <li class="navigation-list-item" routerLink="we-love-tech"> <!--(mouseover)="blnHover=true" (mouseout)="blnHover=false"-->
               <a class="navigation-list-link">we <i style="color: red;" class="far fa-heart"></i> tech</a> <!--[class.fas]="blnHover" -->
             </li>
@@ -97,10 +105,19 @@
         <h2 class="footer-header">Services</h2>
         <ul class="p-0" style="list-style: none;">
           <li>
-            <a routerLink="/webdesign">web design</a>
+            <a routerLink="/cloud-platform">Cloud strategy consulting</a>
           </li>
+          <!-- <li>
+            <a routerLink="/webdesign">web design</a>
+          </li> -->
           <li>
             <a routerLink="/web-development">web application development</a>
+          </li>
+          <li>
+            <a routerLink="/mvp-lab">mvp laboratory</a>
+          </li>
+          <li>
+            <a routerLink="professional-services">Staff augmentation</a>
           </li>
         </ul>
       </div>
