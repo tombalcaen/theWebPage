@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InsightsService } from '../service/insights.service';
 
 @Component({
   selector: 'app-insights',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsightsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _insights: InsightsService) { }
 
   insights = ['test','test2','test3']
 
   ngOnInit() {
+    this._insights.getArticles().subscribe(insights=>{
+      console.log(insights)
+    })
   }
 
 }

@@ -126,3 +126,7 @@
   0% {opacity: 1}
   100% {opacity: 0; transform: translateY(46px)}
 }
+
+.contact-section{
+    background-color: #ecedee;
+}

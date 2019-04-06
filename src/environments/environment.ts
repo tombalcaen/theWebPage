@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  SENDGRID_API_KEY: ""
+  SENDGRID_API_KEY: "",
+  connection_uri: 'http://localhost:3000/',
 };
 
 /*
