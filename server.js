@@ -52,7 +52,7 @@ app.use('/article', articles);
 // res.sendFile(path.join(__dirname+'/dist/hyperion/index.html'));
 // });
 console.log("port: " + process.env.PORT)
-var server = app.listen(process.env.PORT || 8080,()=>{
+var server = app.listen(process.env.PORT || 3000,()=>{
     console.log("App now running on port", server.address().port);
     console.log(__dirname)
 });
