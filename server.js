@@ -43,8 +43,8 @@ app.use(bodyParser.json({limit: '16mb'})); //,{limit: '16mb'}
 // app.use(express.bodyParser({limit: '50mb'}));
 
 //serve static files, this is the base of our front end: aka the angular app
-var distDir = __dirname + "/dist/hyperion/";
-app.use(express.static(distDir));
+// var distDir = __dirname + "/dist/hyperion/";
+// app.use(express.static(distDir));
 
 //routes middelware
 app.use('/article', articles);
