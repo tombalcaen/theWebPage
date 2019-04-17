@@ -61,7 +61,7 @@
     left: 0;
     position: absolute;
     width: 80px;
-    background-color: #c7dbfb;
+    background-color: var(--ahodos-green);
 }
 
 .service-step-body p{

@@ -1,6 +1,7 @@
 .hero-container{
     margin-top: 109px;
     margin-bottom: 120px;
+    min-height: 550px;
 }
 
 @media only screen 
@@ -10,7 +11,7 @@
             margin-bottom: 60px;
         }
 
-        .methodology-section, .responsive-section{
+        .methodology-section, .responsive-section, .engagement-section{
             padding: 60px 0px;
         }
     }
@@ -59,8 +60,12 @@
     text-transform: capitalize;
 }
 
-.outcome-section {
+.outcome-section, .engagement-section {
     padding: 120px 0px;
+}
+
+.engagement-section{
+    background-color: #d7e7ff17; 
 }
 
 @media only screen 
@@ -85,6 +90,52 @@
     font-weight: 300;
     color: #234;
 }
+
+.engagement-steps{
+    padding-top: 50px;
+}
+
+.engagement-step{
+    padding: 30px 0px;
+}
+
+.engagement-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;    
+}
+
+.engagement-step-title{
+    position: relative;
+}
+
+.engagement-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: var(--ahodos-green);
+}
+
+.engagement-step-body p, .outcome-tagline{
+    text-align: left;
+    font-size: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+}
+
+@media only screen 
+    and (max-width: 812px )
+    and (orientation: portrait){
+        .engagement-step-body{
+            padding-top: 25px;
+        }
+    }
 
 @media only screen and (max-width: 800px) {
     .icon-scroll{
