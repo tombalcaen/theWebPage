@@ -23,7 +23,7 @@ const articles = module.exports = mongoose.model('articles', articlesSchema);
 //GET
 module.exports.getArticles = function(callback){
     console.log("model get articles")
-    articles.find({},{name: 1, files: 1, dateCreated: 1, contributor: 1},callback)
+    articles.find({},{name: 1, files: 1, dateCreated: 1, contributor: 1, tags: 1},callback)
 }
 
 module.exports.getArticleById = function(_id,callback){

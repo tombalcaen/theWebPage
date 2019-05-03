@@ -30,21 +30,25 @@
       </div>
     </div>
     <div class="row  m-0 p-5 justify-content-between">
-      <div *ngFor="let i of insights" class="col-12 col-md-4 normal-card" style="height: 540px;">
+      <div *ngFor="let i of insights" class="col-12 col-md-4 normal-card" style="height: 540px;">        
         <div class="box-shadow" style="height: 100%; background-color: white;">
           <a>
             <div class="card-image card-image--normal">
-              <div class="backImg">
+              <div class="backImg" [style.background-image]="'url(' + i?.files[0]?.source + ')'">
 
               </div>
             </div>
             <div class="card-body card-body--normal position-relative">
               <div class="card-body-inner">
-                <h6>12 mei 2018 By Tom Balcaen</h6>
-                <h4>Dit is een titel</h4>
+                <h6>{{i?.dateCreated}} By {{i?.contributor.name}}</h6>
+                <h4>{{i?.name}}</h4>
               </div>
               <div class="card-body-link">read</div>
-              <div class="card-body-tags">cloud</div>
+              <div class="card-body-tags">
+                <span class="badge badge-pill badge-info ml-1" *ngFor="let tag of i.tags">
+                    {{tag}}
+                </span>                
+              </div>
             </div>
           </a>
         </div>
