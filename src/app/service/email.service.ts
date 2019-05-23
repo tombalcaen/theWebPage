@@ -9,41 +9,41 @@ export class EmailService {
 
   constructor(private http: HttpClient) { }
 
-  endpoint = 'https://api.sendgrid.com/v3/mail/send';
-  httpOptions = {
-    headers: new HttpHeaders({
-      'content-type': 'application/json',
-      authorization: 'Bearer '//+ process.env.SENDGRID_API_KEY
-    })
-  };
+  // endpoint = 'https://api.sendgrid.com/v3/mail/send';
+  // httpOptions = {
+  //   headers: new HttpHeaders({
+  //     'content-type': 'application/json',
+  //     authorization: 'Bearer '//+ process.env.SENDGRID_API_KEY
+  //   })
+  // };
 
-  body : Object = {};
+  // body : Object = {};
 
 
-  sendEmail(details){
+  // sendEmail(details){
     
-    this.body = 
-    { personalizations: 
-      [ { to: [{ email: 'tom.balcaen88@gmail.com'}],
-          subject: 'Ahodos contact request!' } 
-      ],
-    from: { email: 'tom.balcaen88@gmail.com' },
-    content: [ { type: 'text/plain', value: `Hello, World!
-    <p>fullname: ` + details.fullName + `</p>
-    <p>company: ` + details.company + `</p>
-    <p>phone: ` + details.phone + `</p>
-    <p>email: <a href="mailto:` + details.email + `">` + details.email + `</a></p>
-    <p>country: ` + details.country + `</p>
-    <p>details: ` + details.requirements + `</p>
-    <p>source: ` + details.source + `</p>
-    <p>budget: ` + details.budget + `</p>
-    ` } ] 
-    };
+  //   this.body = 
+  //   { personalizations: 
+  //     [ { to: [{ email: 'tom.balcaen88@gmail.com'}],
+  //         subject: 'Ahodos contact request!' } 
+  //     ],
+  //   from: { email: 'tom.balcaen88@gmail.com' },
+  //   content: [ { type: 'text/plain', value: `Hello, World!
+  //   <p>fullname: ` + details.fullName + `</p>
+  //   <p>company: ` + details.company + `</p>
+  //   <p>phone: ` + details.phone + `</p>
+  //   <p>email: <a href="mailto:` + details.email + `">` + details.email + `</a></p>
+  //   <p>country: ` + details.country + `</p>
+  //   <p>details: ` + details.requirements + `</p>
+  //   <p>source: ` + details.source + `</p>
+  //   <p>budget: ` + details.budget + `</p>
+  //   ` } ] 
+  //   };
 
-    this.http.post(this.endpoint,this.body,this.httpOptions).subscribe((response)=>{
-      console.log(response)
-    });
-  }
+    // this.http.post(this.endpoint,this.body,this.httpOptions).subscribe((response)=>{
+    //   console.log(response)
+    // });
+  //}
 
   
 }

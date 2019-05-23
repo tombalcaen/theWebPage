@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { EmailService } from '../service/email.service';
+import { ContactService } from '../service/contact.service';
 
 
 @Component({
@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   contactForm : FormGroup;
 
   constructor(private fb: FormBuilder,
-              private _email: EmailService) {
+              private _contact: ContactService) {
     this.createContactForm();
    }
 
@@ -40,8 +40,11 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(form){
+    console.log("contact component")
     console.log(form)
-    this._email.sendEmail(form);    
+    this._contact.processContactData(form).subscribe((data)=>{
+      console.log(data)
+    });
   }
 
 }
