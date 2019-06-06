@@ -39,8 +39,7 @@ export class ContactComponent implements OnInit {
     })
   }
 
-  onSubmit(form){
-    console.log("contact component")
+  onSubmit(form){    
     console.log(form)
     this._contact.processContactData(form).subscribe((data)=>{
       console.log(data)
